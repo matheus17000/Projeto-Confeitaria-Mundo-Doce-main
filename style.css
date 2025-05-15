@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #fff0f5;
+    color: #5c3a3a;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+h1 {
+  font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: #d14d72;
+    margin-bottom: 10px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+h2, h3 {
+  font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #c94c4c;
+    margin: 30px 0 20px;
+    font-weight: bold;
+}
+
+/* Botão carrinho */
+#abrir-carrinho {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 10px 20px;
+    background-color: #ffb6c1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.2rem;
+}
+
+#abrir-carrinho:hover {
+    background-color: #ff8aa1;
+}
+
+/* Seção de produtos */
+#lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+#lista-produtos div {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+#lista-produtos div:hover {
+    transform: scale(1.03);
+}
+
+/* Imagens dos produtos */
+#lista-produtos img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Nome do produto */
+#lista-produtos p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #8b3a3a;
+}
+
+/* Botões de adicionar */
+.btn-adicionar {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn-adicionar:hover {
+    background-color: #e75480;
+}
