@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Padaria</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -14,143 +13,160 @@
     <div>
         <h1>Confeitaria Mundo Doce</h1>
     </div>
-    <div>
-        <h2>Doces</h2>
-    </div>
+
     <button id="abrir-carrinho">🛒 Carrinho</button>
-    <section id="lista-produtos">
 
-        <div>
-            <img src="./img/Brigadeiro-Tradicional.jpeg" alt="">
-            <p>Brigadeiro-Tradicional</p>
-            <button class="btn-adicionar" data-nome="Brigadeiro-Tradicional">Adicionar ao Carrinho</button>
+    <!-- Seção: Doces -->
+    <h2>Doces</h2>
+    <section class="produtos-section">
+        <div class="lista-produtos">
+            <div>
+                <img src="./img/Brigadeiro-Tradicional.jpeg" alt="">
+                <p>Brigadeiro Tradicional - R$2.50</p>
+                <button class="btn-adicionar" data-nome="Brigadeiro Tradicional" data-preco="2.50">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/alfajor-de-chocolate_1.jpeg" alt="">
+                <p>Alfajor de Chocolate - R$4.00</p>
+                <button class="btn-adicionar" data-nome="Alfajor de Chocolate" data-preco="4.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/bolo-de-pote-com-brigadeiro.jpeg" alt="">
+                <p>Bolo de Pote com Brigadeiro - R$6.50</p>
+                <button class="btn-adicionar" data-nome="Bolo de Pote com Brigadeiro" data-preco="6.50">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Beijinho.jpg" alt="">
+                <p>Beijinho - R$2.50</p>
+                <button class="btn-adicionar" data-nome="Beijinho" data-preco="2.50">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Bomba de doce de leite.jpg" alt="">
+                <p>Bomba de Doce de Leite - R$5.00</p>
+                <button class="btn-adicionar" data-nome="Bomba de Doce de Leite" data-preco="5.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/cannoli com tubos de chocolate.jpg" alt="">
+                <p>Cannoli com Tubos de Chocolate - R$7.00</p>
+                <button class="btn-adicionar" data-nome="Cannoli com Tubos de Chocolate" data-preco="7.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/cupcakes_1.jpeg" alt="">
+                <p>Cupcakes - R$3.50</p>
+                <button class="btn-adicionar" data-nome="Cupcakes" data-preco="3.50">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/donuts de chocolate recheado.jpg" alt="">
+                <p>Donuts de Chocolate Recheado - R$4.50</p>
+                <button class="btn-adicionar" data-nome="Donuts de Chocolate Recheado" data-preco="4.50">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/sonho.jpeg" alt="">
+                <p>Sonho - R$3.00</p>
+                <button class="btn-adicionar" data-nome="Sonho" data-preco="3.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/trufas de chocolate.jpeg" alt="">
+                <p>Trufas de Chocolate - R$5.00</p>
+                <button class="btn-adicionar" data-nome="Trufas de Chocolate" data-preco="5.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Ecler (1).jpeg" alt="">
+                <p>Éclair - R$4.00</p>
+                <button class="btn-adicionar" data-nome="Éclair" data-preco="4.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/pão-de-mel.jpeg" alt="">
+                <p>Pão de Mel - R$3.50</p>
+                <button class="btn-adicionar" data-nome="Pão de Mel" data-preco="3.50">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/ovo-chocolate-recheado.jpg" alt="">
+                <p>Ovo de Chocolate Recheado - R$10.00</p>
+                <button class="btn-adicionar" data-nome="Ovo de Chocolate Recheado" data-preco="10.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Macarons.jpeg" alt="">
+                <p>Macarons - R$8.00</p>
+                <button class="btn-adicionar" data-nome="Macarons" data-preco="8.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Mousses.jpg" alt="">
+                <p>Mousses - R$6.00</p>
+                <button class="btn-adicionar" data-nome="Mousses" data-preco="6.00">Adicionar ao Carrinho</button>
+            </div>
+            
         </div>
-        <div>
-            <img src="./img/alfajor-de-chocolate_1.jpeg" alt="">
-            <p>Alfajor de Chocolate</p>
-            <button class="btn-adicionar" data-nome="Alfajor de Chocolate">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/bolo-de-pote-com-brigadeiro.jpeg" alt="">
-            <p>Bolo de Pote com Brigadeiro</p>
-            <button class="btn-adicionar" data-nome="Bolo de Pote com Brigadeiro">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bomba de doce de leite.jpg" alt="">
-            <p>Bomba de Doce de Leite</p>
-            <button class="btn-adicionar" data-nome="Bomba de Doce de Leite">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/cannoli com tubos de chocolate.jpg" alt="">
-            <p>Cannoli com Tubos de Chocolate</p>
-            <button class="btn-adicionar" data-nome="Cannoli com Tubos de Chocolate">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/cupcakes_1.jpeg" alt="">
-            <p>Cupcakes</p>
-            <button class="btn-adicionar" data-nome="Cupcakes">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/donuts de chocolate recheado.jpg" alt="">
-            <p>Donuts de Chocolate Recheado</p>
-            <button class="btn-adicionar" data-nome="Donuts de Chocolate Recheado">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Macarons.jpeg" alt="">
-            <p>Macarons</p>
-            <button class="btn-adicionar" data-nome="Macarons">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/ovo-chocolate-recheado.jpg" alt="">
-            <p>Ovo de Chocolate Recheado</p>
-            <button class="btn-adicionar" data-nome="Ovo de Chocolate Recheado">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/pão-de-mel.jpeg" alt="">
-            <p>Pão de Mel</p>
-            <button class="btn-adicionar" data-nome="Pão de Mel">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/sonho.jpeg" alt="">
-            <p>Sonho</p>
-            <button class="btn-adicionar" data-nome="Sonho">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/trufas de chocolate.jpeg" alt="">
-            <p>Trufas de Chocolate</p>
-            <button class="btn-adicionar" data-nome="Trufas de Chocolate">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Beijinho.jpg" alt="">
-            <p>Beijinhos</p>
-            <button class="btn-adicionar" data-nome="Beijinho">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Mousses.jpg" alt="">
-            <p>Mousses de Limão, Chocolate e Morango</p>
-            <button class="btn-adicionar" data-nome="Mousses de Limão, Chocolate e Morango">Adicionar ao
-                Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Ecler (1).jpeg" alt="">
-            <p>Ecler</p>
-            <button class="btn-adicionar" data-nome="Ecler">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/bolo-de-chocolate.jpeg" alt="">
-            <p>Bolo de Chocolate</p>
-            <button class="btn-adicionar" data-nome="Bolo de Chocolate">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/banoffee.jpeg" alt="">
-            <p>Banoffee</p>
-            <button class="btn-adicionar" data-nome="Banoffee">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bolo de cenoura.jpg" alt="">
-            <p>Bolo de Cenoura</p>
-            <button class="btn-adicionar" data-nome="Bolo de Cenoura">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bolo de Fubá.jpg" alt="">
-            <p>Bolo de Fubá</p>
-            <button class="btn-adicionar" data-nome="Bolo de Fubá">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bolo de laranja.jpg" alt="">
-            <p>Bolo de Laranja</p>
-            <button class="btn-adicionar" data-nome="Bolo de Laranja">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bolo dois amores.jpg" alt="">
-            <p>Bolo Dois Amores</p>
-            <button class="btn-adicionar" data-nome="Bolo Dois Amores">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bolo-de-chocolate.jpeg" alt="">
-            <p>Bolo de Chocolate com Morango</p>
-            <button class="btn-adicionar" data-nome="Bolo de Chocolate com Morango">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/bolo-de-coco.jpeg" alt="">
-            <p>Bolo de Coco</p>
-            <button class="btn-adicionar" data-nome="Bolo de Coco">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bolo-Floresta-Negra.jpeg" alt="">
-            <p>Bolo Floresta Negra</p>
-            <button class="btn-adicionar" data-nome="Bolo Floresta Negra">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <img src="./img/Bolo-Tiramisu.jpeg" alt="">
-            <p>Bolo Tiramisu</p>
-            <button class="btn-adicionar" data-nome="Bolo Tiramisu">Adicionar ao Carrinho</button>
-        </div>
-        
+    </section>
 
+    <!-- Seção: Bolos e Tortas -->
+    <h2>Bolos e Tortas</h2>
+    <section class="produtos-section">
+        <div class="lista-produtos">
+            <div>
+                <img src="./img/bolo-de-chocolate.jpeg" alt="">
+                <p>Bolo de Chocolate - R$18.00</p>
+                <button class="btn-adicionar" data-nome="Bolo de Chocolate" data-preco="18.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/banoffee.jpeg" alt="">
+                <p>Banoffee - R$22.00</p>
+                <button class="btn-adicionar" data-nome="Banoffee" data-preco="22.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Bolo de cenoura.jpg" alt="">
+                <p>Bolo de Cenoura - R$15.00</p>
+                <button class="btn-adicionar" data-nome="Bolo de Cenoura" data-preco="15.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Bolo de Fubá.jpg" alt="">
+                <p>Bolo de Fubá - R$12.00</p>
+                <button class="btn-adicionar" data-nome="Bolo de Fubá" data-preco="12.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Bolo de laranja.jpg" alt="">
+                <p>Bolo de Laranja - R$14.00</p>
+                <button class="btn-adicionar" data-nome="Bolo de Laranja" data-preco="14.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Bolo dois amores.jpg" alt="">
+                <p>Bolo Dois Amores - R$20.00</p>
+                <button class="btn-adicionar" data-nome="Bolo Dois Amores" data-preco="20.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/bolo-de-coco.jpeg" alt="">
+                <p>Bolo de Coco - R$16.00</p>
+                <button class="btn-adicionar" data-nome="Bolo de Coco" data-preco="16.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Bolo-Floresta-Negra.jpeg" alt="">
+                <p>Bolo Floresta Negra - R$25.00</p>
+                <button class="btn-adicionar" data-nome="Bolo Floresta Negra" data-preco="25.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Bolo-Tiramisu.jpeg" alt="">
+                <p>Bolo Tiramisu - R$30.00</p>
+                <button class="btn-adicionar" data-nome="Bolo Tiramisu" data-preco="30.00">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <img src="./img/Red-velvet.jpeg" alt="">
+                <p>Red Velvet - R$28.00</p>
+                <button class="btn-adicionar" data-nome="Red Velvet" data-preco="28.00">Adicionar ao Carrinho</button>
+            </div>
+           
+        </div>
+    </section>
 
+    <!-- Carrinho -->
+    <div id="carrinho" class="carrinho" style="display: none;">
+        <button id="fechar-carrinho">Fechar ❌</button>
+        <h2>Seu Carrinho</h2>
+        <ul id="lista-carrinho"></ul>
+        <p>Total: R$<span id="total-carrinho">0.00</span></p>
+        <button id="finalizar-pedido">Finalizar Pedido via WhatsApp</button>
+    </div>
 
-
+    <script src="./script.js"></script>
 </body>
 
 </html>

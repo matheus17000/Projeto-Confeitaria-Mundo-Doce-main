@@ -7,27 +7,34 @@
 }
 
 body {
-    background: #fff0f5;
+    background-image: url('./img/ChatGPT\ Image\ 15\ de\ mai.\ de\ 2025\,\ 19_45_22.png'); /* Altere o nome se tiver salvo diferente */
+    background-size: auto; /* ou 'cover' se quiser cobrir tudo */
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: #5c3a3a;
     padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
+
+
 
 /* Cabeçalho */
 h1 {
-  font-family: 'Pacifico', cursive;
+    font-family: 'Brush Script MT', cursive;
     text-align: center;
     font-size: 3rem;
-    color: #d14d72;
+    color: lch(100% 0.01 296.81);
     margin-bottom: 10px;
-    font-family: 'Brush Script MT', cursive;
 }
 
-h2, h3 {
-  font-family: 'Pacifico', cursive;
+h2 {
+    font-family: 'Pacifico', cursive;
     text-align: center;
-    color: #c94c4c;
-    margin: 30px 0 20px;
+    color: hsl(0, 0%, 100%);
+    margin: 40px 0 20px;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 /* Botão carrinho */
@@ -49,15 +56,19 @@ h2, h3 {
     background-color: #ff8aa1;
 }
 
-/* Seção de produtos */
-#lista-produtos {
+/* Seções de produtos separadas */
+.produtos-section {
+    margin-bottom: 50px;
+}
+
+.lista-produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* 5 produtos por linha */
     gap: 20px;
     padding: 0 10px;
 }
 
-#lista-produtos div {
+.lista-produtos div {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -66,21 +77,21 @@ h2, h3 {
     transition: transform 0.2s;
 }
 
-#lista-produtos div:hover {
+.lista-produtos div:hover {
     transform: scale(1.03);
 }
 
 /* Imagens dos produtos */
-#lista-produtos img {
+.lista-produtos img {
     width: 100%;
-    height: 160px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 /* Nome do produto */
-#lista-produtos p {
+.lista-produtos p {
     font-weight: bold;
     font-size: 1.1rem;
     margin: 10px 0;
@@ -102,3 +113,55 @@ h2, h3 {
 .btn-adicionar:hover {
     background-color: #e75480;
 }
+.carrinho {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: #fffaf0;
+  border: 2px solid #ff69b4;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 300px;
+}
+
+.carrinho h2 {
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 10px;
+  color: #c94c4c;
+}
+
+.carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrinho li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #5c3a3a;
+}
+
+#finalizar-pedido {
+  margin-top: 10px;
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#finalizar-pedido:hover {
+  background: #1ebc57;
+}
+.preco {
+  display: block;
+  color: #e75480;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
